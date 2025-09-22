@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisebrev fra NKUL 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Innlegg</h2>
+        <ul>
+            <li><a href="post1.html">KI-gruppas arbeid (3. februar 2025)</a></li>
+            <li><a href="post2.html">Forsøk på KI som assistent i matematikk (24. februar 2025)</a></li>
+            <li><a href="post3.html">Men kvifor skal me eigentleg bruke KI i undervisninga? (17. mars 2025)</a></li>
+            <li><a href="post4.html">Noen tanker om KI og juks (31. mars 2025)</a></li>
+            <li><a href="post5.html">Automatisering og undervisning (6. mai 2025)</a></li>
+            <li><a href="post6.html">Reisebrev fra NKUL (2. juni 2025)</a></li>
+            <li><a href="post7.html">Hva vil det si at en språkmodell kan lære? (22. september 2025)</a></li>
+            <li><a href="index.html">Tilbake til forsiden</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="blog-date">Publisert: 22. september 2025</div>
+        <div class="blog-title">Hva vil det si at en språkmodell kan lære?</div>
+        <div class="blog-content">
+            <p>
+                Det snakkes mye om at språkmodeller kan lære eller trene på det vi skriver inn, men hva vil det egentlig si at den lærer?
+Når vi snakker om at en språkmodell lærer kan det egentlig bety to forskjellige ting:
+                <ol>
+                    <li> gjennom <b>trening</b> av modellen – noe som skjer før vi begynner å bruke den </li>
+                    <li> i løpet av samtalene vi har med den, såkalt <b>“in-context learning”</b>
+                </ol>  
+            </p>
+            <p>
+                Disse to prosessene kan sammenlignes med henholdsvis menneskers <b>langtidsminne og korttidsminne</b>.            <p>
+            </p>
+            <p>
+                Den første måten språkmodeller lærer på – opptrening av modellen – skjer ved at modellen får se noen tekster veldig mange ganger. Den blir matet med setning etter setning fra et stort tekstkorpus og prøver å forutsi neste ord (eller egentlig orddel) i setningen. Basert på dette endres modellens parametere (også kalt vekter) veldig mange ganger og den blir gradvis flinkere til å forstå språk. Hvis vi vil bruke språkmodellen med en praterobot, trener vi den på en lignende måte med par av spørsmål og svar. 
+            </p>
+            <p>
+                Resultatet av treningsprosessen er varig kunnskap i modellen. Den “vet” hvordan setninger vanligvis bygges opp, hvilke ord som ofte kommer etter hverandre og hvordan et godt svar ser ut. Denne kunnskapen er kodet som mønstre i modellens milliarder av parametere – og kan sammenlignes med menneskets langtidsminne.
+            </p>
+            <p>
+                Den andre måten språkmodeller lærer på – «in-context learning» kan sammenlignes med menneskers korttidshukommelse. I motsetning til treningsfasen, der vektene endres, skjer dette uten at noen parametere oppdateres. Det som skjer er at modellen tilpasser seg konteksten i selve samtalen. All tekst som skrives i chatten – brukerens meldinger, svarene til prateroboten og systemledeteksten – utgjør konteksten modellen ser på når den skal generere neste svar. Selv om modellen tilpasser seg konteksten, så så skjer det ingen varig læring her – modellens parametre blir ikke endret. Derfor kan vi kalle dette modellens korttidsminne, men her stopper også metaforen. Hos mennesker vil noe av det vi holder i korttidsminnet overføres til langtidsminnet, men dette skjer ikke hos språkmodeller med mindre man gjør noe aktivt for å få det til. 
+            </p>
+            <h2>Finjustering for varig læring: fra korttid til langtidsminne</h2>
+            <p>
+                Hvordan kan vi da få modellen til å lære noe nytt på permanent basis? Svaret er at vi må tilbake til noe som ligner treningsprosessen. I praksis betyr det ny trening eller finjustering (fine-tuning) av modellen. Finjustering vil si at utviklerne tar den ferdig trente modellen og trener den litt til på et mindre datasett med nye eksempler eller ønsket kunnskap – og disse kan gjerne være hentet fra brukernes samtaler med prateroboter. Finjustering er altså “ekstratrening” for å overføre ny informasjon til modellens langtidsminne. 
+            </p>
+            <p>
+                Hvis du syntes dette var litt vanskelig, eller noen begreper var uklare, kan du bruke prateroboter til å forenkle stoffet. 
+            </p>
+        </div>
+    </div>  
+</body>
+</html>
