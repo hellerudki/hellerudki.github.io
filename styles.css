@@ -46,3 +46,30 @@ body {
 .green-text {
     color: #32a84a;
 }
+
+/* --- Add to the bottom of styles.css --- */
+
+/* 1. Ensure the table container fills the width */
+.presentation-images-table {
+    width: 100%;
+    /* Optional: Adds some space above and below the group of images */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 2. Center the content of the table cells and add spacing */
+.presentation-images-table td {
+    text-align: center; /* This centers the images horizontally */
+    padding-bottom: 20px; /* Adds space between the stacked images */
+}
+
+/* 3. Target the images inside this specific table */
+.presentation-images-table img {
+    width: 70%;    /* THE REQUESTED CHANGE */
+    height: auto;  /* THE REQUESTED CHANGE: Maintains aspect ratio */
+
+    /* Optional styling to make screenshots look better: */
+    border: 1px solid #ddd; /* Adds a thin gray border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle drop-shadow */
+    border-radius: 4px; /* Slightly rounds the corners */
+}
