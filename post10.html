@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KI-gruppas blogg</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+display: flex;
+}
+.sidebar {
+width: 250px;
+background: #f4f4f4;
+padding: 20px;
+height: 100vh;
+box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar h2 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+.sidebar ul {
+list-style: none;
+padding: 0;
+}
+.sidebar ul li {
+margin: 10px 0;
+}
+.sidebar ul li a {
+text-decoration: none;
+color: #333;
+font-size: 16px;
+}
+.content {
+flex: 1;
+padding: 40px;
+}
+.blog-title {
+font-size: 24px;
+font-weight: bold;
+}
+.blog-date {
+font-size: 14px;
+color: #666;
+margin-bottom: 10px;
+}
+.blog-content {
+margin-top: 20px;
+line-height: 1.6;
+}
+.green-text {
+color: #32a84a;
+    }
+</style>
+</head>
+
+<body>
+<div class="sidebar">
+<h2>Innlegg</h2>
+<ul>
+<li><a href="post1.html">KI-gruppas arbeid (3. februar 2025)</a></li>
+<li><a href="post2.html">Forsøk på KI som assistent i matematikk (24. februar 2025)</a></li>
+<li><a href="post3.html">Men kvifor skal me eigentleg bruke KI i undervisninga? (17. mars 2025)</a></li>
+<li><a href="post4.html">Noen tanker om KI og juks (31. mars 2025)</a></li>
+<li><a href="post5.html">Automatisering og undervisning (6. mai 2025)</a></li>
+<li><a href="post6.html">Reisebrev fra NKUL (2. juni 2025)</a></li>
+<li><a href="post7.html">Hva vil det si at en språkmodell kan lære? (22. september 2025)</a></li>
+<li><a href="post8.html">KI-gruppa på FIKS-seminar (27. oktober 2025)</a></li>
+<li><a href="post9.html">Bruk av KI-generert PowerPoint i undervisning (9. desember 2025)</a></li>
+<li><a href="post10.html">Kan vi stole på KI-detektorer? (27. september 2026)</a></li>
+<li><a href="index.html">Tilbake til forsiden</a></li>
+</ul>
+</div>
+<div class="content">
+<h1 class="blog-title">Kan vi stole på KI-detektorer?</h1>
+<div class="blog-date">27. september 2026</div>
+<div class="blog-content">
+
+<p>Jeg har flere ganger, med selvsikkerhet og bravur, påstått at KI-detektorer ikke virker. Mitt viktigste argument har vært at en KI-detektor bare er en annen KI-modell som er trent opp til å skille mellom KI-genererte og menneskeskrevne tekster. Alle usikkerheter, unøyaktigheter og hallusineringer som kjennetegner en vanlig språkmodell vil derfor også – i større eller mindre grad – hefte ved KI-detektorene. Fram til nå har KI-detektorene også hatt altfor mange «falske positive». Med andre ord: De har oppgitt at mange menneskeskrevne tekster er KI-genererte.</p>
+
+<p>«Må jeg spise i meg ordene mine?» Det var det jeg tenkte da jeg ble oppmerksom på artikkelen <a href="https://www.manifestmedia.no/artikler/blir-nrks-nekrologer-skrevet-av-chatgpt">«Kan NRKs nekrologer skrives av ChatGPT?»</a> av Magnus Marsdal hos Manifest Media. Her har journalistene brukt KI-detektoren «Pangram» til å gå gjennom flere av tekstene til NRKs kommentatorer for å prøve å avdekke om de er skrevet av KI. Resultatene tydet på at de fleste journalistene hadde skrevet kommentarene selv – helt uten hjelp av KI, men 14 av 15 tekster skrevet av daværende økonomikommentator Cecilie Langum Becker ble flagget for KI-bruk, og to av dem ble markert som 100&nbsp;% KI-genererte.</p>
+
+<p>Pangram reklamerer på sine hjemmesider med en treffprosent på 99,66&nbsp;% for KI-genererte dokumenter og en andel falske positive på bare 0,0041&nbsp;% i <a href="https://www.pangram.com/blog/pangram-4-technical">egne tester</a>. Er dette for godt til å være sant?</p>
+
+<p>Vi i KI-gruppa bestemte oss for å foreta en veldig enkel – og ganske uformell – utprøving av Pangram. Vi tok et av våre tidligere blogginnlegg, som vi var sikre på at vi hadde skrevet uten hjelp av KI, og ba Claude oversette det til dansk. Deretter ga vi den danske versjonen til Pangram, som vurderte den som 100&nbsp;% menneskeskrevet. Vi gjentok eksperimentet, men oversatte denne gangen den samme teksten til arabisk og deretter tilbake til norsk. Både den arabiske og den norske versjonen ble flagget som 100&nbsp;% menneskeskrevet av Pangram. Dette kan være gode resultater, men bare hvis man ikke regner oversettelse som KI-generering – noe det strengt tatt er, siden språkmodellen skriver hele den oversatte teksten selv, ord for ord. Det er definitivt dårlige resultater hvis man er språklærer og ønsker å undersøke om elevene har brukt KI-oversettere når de ikke skal gjøre det. Her er en lenke til <a href="https://claude.ai/share/cadbda88-d720-4a69-86c4-c23e0cf53f7d">Claude-samtalen</a> hvis noen vil prøve selv.</p>
+
+<p>Det neste forsøket vi gjorde, var å skrive et prompt i Claude der vi ga den en lenke til <a href="https://flywire.ai">en nettside</a> om at KI hadde blitt brukt til å kartlegge hjernen til en bananflue, og at en simulert bananflue var blitt lært opp til å spille dataspill, handle kryptovaluta og «doomscrolle». I promptet limte vi også inn blogginnlegget vi hadde brukt tidligere, og ba Claude etterligne skrivestilen min så godt som mulig. Claude genererte en helt OK tekst om «doomscrollende bananfluer», som vi ga til Pangram. Denne var altså 100&nbsp;% KI-generert, men ble vurdert av Pangram som bare 28&nbsp;% KI-generert og 72&nbsp;% menneskeskrevet. Her er en lenke til <a href="https://claude.ai/share/8b225db2-7445-434f-ba9a-1fd5cc6e0700">samtalen</a>.</p>
+
+<p>Hva kan vi foreløpig si om Pangram basert på denne utprøvingen?</p>
+
+<ul>
+<li>For det første, og på den positive siden: Pangram har veldig få falske positive. Vi har enda ikke klart å få den til å markere menneskeskreven tekst som KI-generert. Foreløpig ser det ut til at hvis den markerer en tekst som KI-generert, så er det stor sannsynlighet for at den faktisk er KI-generert.</li>
+<li>For det andre virker det som om Pangram er ganske lett å lure – kanskje særlig om man ikke bruker engelsk (norsk og dansk står for øvrig ikke på lista over språk Pangram oppgir at den støtter). Med noen små instruksjoner i promptet til de mest brukte chatbotene, er det enkelt å generere en tekst som Pangram vil vurdere som menneskeskrevet. Dette kan nok også gjøres manuelt i ettertid, eller ved hjelp av ulike tjenester som menneskeliggjør KI-generert tekst. Tjenesten «Ultra Humanizer» reklamerer allerede med at den kan lure Pangram. Pangram vil naturligvis trene nye modeller som kan detektere en slik omskriving, og disse tjenestene vil igjen lage nye prompter eller trene nye modeller som er enda flinkere til å lure Pangram – «og sånn går nu dagan».</li>
+</ul>
+
+<p>At Pangram har så få falske positive, men er ganske lett å lure, er egentlig to sider av samme sak. Det er veldig viktig at en KI-detektor ikke har falske positive – det kan være helt ødeleggende for en elev, forsker eller journalist å bli beskyldt for uetisk KI-bruk når de ikke faktisk har gjort det. Det er likevel ikke noe problem å lage en KI-detektor uten falske positive – det er bare å markere alle tekster som menneskeskrevne automatisk, men hvis den ikke faktisk oppdager KI-bruk, vil den jo ha svært begrenset verdi. Pangram finner jo likevel en del KI-generert innhold, men langt fra alt. På forskerspråket sier man gjerne at en slik modell har høy «precision»: Nesten alle tekstene som er markert som KI, er «sanne positive», altså faktisk KI-genererte. Men den har lav «recall»: Den får bare tak i en liten del av de KI-genererte tekstene, og mange blir markert som menneskeskrevne – det vi kaller «falske negative».</p>
+
+<p>Har Pangram en rolle i skoleverket? Foreløpig er svaret vårt: sannsynligvis ikke. Vi kan ikke se at den er god nok til å finne KI-generert innhold, og det er for lett å lure den. Det finnes andre og enklere måter å begrense KI-bruk i de situasjonene der elevene ikke skal ha tilgang – selv om dette heller ikke fungerer perfekt. En situasjon der Pangram kan være nyttig, er derfor som en dobbeltsjekk på om tilgangssperrer for internett faktisk fungerer. Dersom Pangram viser KI-bruk i tekstene til flere elever på for eksempel en norsktentamen, er det sannsynlig at de har funnet metoder for å komme rundt disse tilgangssperrene.</p>
+
+<p>Hvis jeg skal vurdere om jeg må trekke tilbake utsagnet mitt om at KI-detektorer ikke fungerer, er altså svaret foreløpig «nei», men jeg er litt mindre skråsikker enn før.</p>
+
+</div>
+</div>
+</body>
+</html>
